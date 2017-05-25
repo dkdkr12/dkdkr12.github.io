@@ -1,0 +1,9 @@
+<form action="/home/update/<%= @one_poke.id %>" method="POST">
+    <p>이름</p>
+    <input type="text" name="poke_name" value="<%= @one_poke.name %>"><br>
+    <p>설명</p>
+    <textarea type="text" rows="10" cols="50" name="poke_content"><%= @one_poke.content %>
+    </textarea><br>
+    <button type="submit">submit</button>
+    
+</form>
